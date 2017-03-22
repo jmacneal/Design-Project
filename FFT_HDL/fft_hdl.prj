@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.matlabhdlcoder" plugin-version="R2013a">
-  <configuration file="/home/jake/Documents/School/Design Project/FFT_HDL/fft_hdl.prj" location="/home/jake/Documents/School/Design Project/FFT_HDL" name="fft_hdl" target="target.matlab.hdlcoder" target-name="HDL Code Generation">
+  <configuration file="/home/jake/Documents/School/Design Project/Design-Project/FFT_HDL/fft_hdl.prj" location="/home/jake/Documents/School/Design Project/Design-Project/FFT_HDL" name="fft_hdl" target="target.matlab.hdlcoder" target-name="HDL Code Generation">
     <param.AutoInferDefaultFile />
     <param.AutoInferUseVariableSize>false</param.AutoInferUseVariableSize>
     <param.AutoInferUseUnboundedSize>false</param.AutoInferUseUnboundedSize>
@@ -14,11 +14,11 @@
     <param.hdl.WorkingSpecifiedDirectory />
     <param.hdl.BuildDirectory>option.hdl.ProjectDirectory</param.hdl.BuildDirectory>
     <param.hdl.BuildSpecifiedDirectory />
-    <param.fixptconv.InstrumentedMexFile />
+    <param.fixptconv.InstrumentedMexFile>${PROJECT_ROOT}/codegen/worner_fft/fixpt/worner_fft_float_mex.mexa64</param.fixptconv.InstrumentedMexFile>
     <param.fixptconv.InstrumentedBuildChecksum />
     <param.fixptconv.ShowCoverage>true</param.fixptconv.ShowCoverage>
-    <param.fixptconv.FixedPointValidationChecksum />
-    <param.fixptconv.FixedPointSourceCodeChecksum />
+    <param.fixptconv.FixedPointValidationChecksum>0.31999795761624494</param.fixptconv.FixedPointValidationChecksum>
+    <param.fixptconv.FixedPointSourceCodeChecksum>0.7456353567285582</param.fixptconv.FixedPointSourceCodeChecksum>
     <param.fixptconv.FixedPointStaticAnalysisChecksum />
     <param.fixptconv.DefaultTestFile />
     <param.fixptconv.ExcludedFixedPointVerificationFiles />
@@ -30,10 +30,144 @@
     <param.fixptconv.SafetyMargin>0</param.fixptconv.SafetyMargin>
     <param.fixptconv.ProposeUsingDesignMinMaxAnd>option.fixptconv.ProposeUsingDesignMinMaxAnd.SimAndDerivedMinMax</param.fixptconv.ProposeUsingDesignMinMaxAnd>
     <param.transformedVariables>
-      <UserEntities />
+      <UserEntities>
+        <Function file="$(PROJECTDIR)/worner_fft.m" name="worner_fft" specialization="worner_fft" specializationId="-1" uniqueId="worner_fft">
+          <Variable name="out" specid="-1" />
+          <Variable name="x" specid="-1" />
+          <Variable name="y" specid="-1" />
+          <Variable name="N" specid="-1" />
+          <Variable name="q" specid="-1" />
+          <Variable name="j" specid="-1" />
+          <Variable name="m" specid="-1" />
+          <Variable name="d" specid="-1" />
+          <Variable name="k" specid="-1" />
+          <Variable name="s" specid="-1" />
+          <Variable name="e" specid="-1" />
+          <Variable name="r" specid="-1" />
+          <Variable name="y_top" specid="-1" />
+          <Variable name="y_bottom" specid="-1" />
+          <Variable name="z" specid="-1" />
+        </Function>
+      </UserEntities>
     </param.transformedVariables>
     <param.computedVariables>
-      <ComputedEntities />
+      <ComputedEntities>
+        <Function file="$(PROJECTDIR)/worner_fft.m" name="worner_fft" specialization="worner_fft" specializationId="-1" uniqueId="worner_fft">
+          <Variable name="out" specid="-1">
+            <Column property="Kind" type="String" value="output" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>2048</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="x" specid="-1">
+            <Column property="Kind" type="String" value="input" />
+            <MATLABType class="double" complex="true">
+              <size>1</size>
+              <size>2048</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="y" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>2048</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="N" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="q" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="j" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="m" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="d" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="true">
+              <size>1</size>
+              <size>-1</size>
+              <dynamic>false</dynamic>
+              <dynamic>true</dynamic>
+            </MATLABType>
+          </Variable>
+          <Variable name="k" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="s" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="e" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="r" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="false">
+              <size>1</size>
+              <size>1</size>
+            </MATLABType>
+          </Variable>
+          <Variable name="y_top" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="true">
+              <size>1</size>
+              <size>-1</size>
+              <dynamic>false</dynamic>
+              <dynamic>true</dynamic>
+            </MATLABType>
+          </Variable>
+          <Variable name="y_bottom" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="true">
+              <size>1</size>
+              <size>-1</size>
+              <dynamic>false</dynamic>
+              <dynamic>true</dynamic>
+            </MATLABType>
+          </Variable>
+          <Variable name="z" specid="-1">
+            <Column property="Kind" type="String" value="local" />
+            <MATLABType class="double" complex="true">
+              <size>1</size>
+              <size>-1</size>
+              <dynamic>false</dynamic>
+              <dynamic>true</dynamic>
+            </MATLABType>
+          </Variable>
+        </Function>
+      </ComputedEntities>
     </param.computedVariables>
     <param.fixptconv.FiMathString>fimath('RoundingMethod', 'Floor', 'OverflowAction', 'Wrap', 'ProductMode', 'FullPrecision', 'MaxProductWordLength', 128, 'SumMode', 'FullPrecision', 'MaxSumWordLength', 128)</param.fixptconv.FiMathString>
     <param.fixptconv.DefaultRoundMode>option.fixptconv.proposetypes.floor</param.fixptconv.DefaultRoundMode>
@@ -261,12 +395,8 @@
       <param.hdl.WorkingSpecifiedDirectory />
       <param.hdl.BuildDirectory />
       <param.hdl.BuildSpecifiedDirectory />
-      <param.fixptconv.InstrumentedMexFile />
       <param.fixptconv.InstrumentedBuildChecksum />
       <param.fixptconv.ShowCoverage />
-      <param.fixptconv.FixedPointValidationChecksum />
-      <param.fixptconv.FixedPointSourceCodeChecksum />
-      <param.fixptconv.FixedPointStaticAnalysisChecksum />
       <param.fixptconv.DefaultTestFile />
       <param.fixptconv.ExcludedFixedPointVerificationFiles />
       <param.fixptconv.ExcludedFixedPointSimulationFiles />
@@ -481,7 +611,18 @@
       <param.hdl.BitstreamBuildMode />
     </unset>
     <fileset.entrypoints>
-      <file custom-data-expanded="true" value="${PROJECT_ROOT}/worner_fft.m" />
+      <file custom-data-expanded="true" value="${PROJECT_ROOT}/worner_fft.m">
+        <Inputs fileName="worner_fft.m" functionName="worner_fft">
+          <Input Name="x">
+            <Class>double</Class>
+            <Size>1 x 2048</Size>
+            <Value />
+            <InitialValue />
+            <UserDefined>true</UserDefined>
+            <Complex>true</Complex>
+          </Input>
+        </Inputs>
+      </file>
     </fileset.entrypoints>
     <fileset.scriptfile />
     <fileset.package />
