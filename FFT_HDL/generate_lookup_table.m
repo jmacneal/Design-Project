@@ -15,7 +15,11 @@ fprintf(fileid, 'function [ exponential_lookup_table ] = exp_lookup ( )\n');
 fprintf(fileid, '    exponential_lookup_table = [\n');
 
 for i = 1:length(m)
-    fprintf(fileid, '        %f\n', A(i));
+    if (imag(A(i)) > 0)
+        fprintf(fileid, '        %f + %fi\n', real(A(i)), imag(A(i)));
+    else
+        fprintf(fileid, '        %f - %fi\n', real(A(i)), abs(imag(A(i))));
+    end;
 end;
 fprintf(fileid, '    ];\n');
 
