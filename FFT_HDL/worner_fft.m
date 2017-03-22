@@ -3,9 +3,11 @@ function y = worner_fft(x)
     x = bitrevorder(x);
     q = log2(N);
 
+    exp_lt = exp_lookup();
+
     for j = 1:q
         m = 2^(j-1);
-        d = exp(-pi*1i/m).^(0:m-1);
+        d = exp_lt(m).^(0:m-1);
         for k = 1:2^(q-j)
               s = 2*(k-1)*m+1;   % start-index
               e = 2*k*m;             % end-index
