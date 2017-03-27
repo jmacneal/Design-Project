@@ -1,0 +1,113 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 21:42:19  March 26, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		OFDM_transmitter_quartus_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C8
+set_global_assignment -name TOP_LEVEL_ENTITY OFDM_transmitter
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:42:19  MARCH 26, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/OFDM_transmitter_pkg.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block1.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block2.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block4.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block5.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block6.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block1.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block2.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block4.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block5.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block6.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_2.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_4.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block1.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_6.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block2.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block1.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_7.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_8.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block4.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block2.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_10.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block5.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_11.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_12.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block6.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block7.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block4.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_14.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block8.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block5.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_15.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLROM_3_16.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block9.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/Complex3Multiply_block10.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block6.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block1.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block2.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block4.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block5.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block6.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block1.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block2.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block3.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block4.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block5.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block6.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/IFFT_HDL_Optimized.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/OFDM_transmitter_tc.vhd
+set_global_assignment -name VHDL_FILE ../hdlsrc/OFDM_transmitter/OFDM_transmitter.vhd
+set_global_assignment -name SDC_FILE ../hdlsrc/OFDM_transmitter/clock_constraint.sdc

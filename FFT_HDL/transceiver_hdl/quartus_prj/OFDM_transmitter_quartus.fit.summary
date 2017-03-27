@@ -1,0 +1,16 @@
+Fitter Status : Failed - Mon Mar 27 15:52:22 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : OFDM_transmitter_quartus
+Top-level Entity Name : OFDM_transmitter
+Family : Cyclone II
+Device : EP2C35F672C8
+Timing Models : Final
+Total logic elements : 2,502 / 33,216 ( 8 % )
+    Total combinational functions : 1,557 / 33,216 ( 5 % )
+    Dedicated logic registers : 2,331 / 33,216 ( 7 % )
+Total registers : 2331
+Total pins : 516 / 475 ( 109 % )
+Total virtual pins : 0
+Total memory bits : 364 / 483,840 ( < 1 % )
+Embedded Multiplier 9-bit elements : 66 / 70 ( 94 % )
+Total PLLs : 0 / 4 ( 0 % )

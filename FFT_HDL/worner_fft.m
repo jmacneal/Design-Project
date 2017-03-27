@@ -1,5 +1,5 @@
-function y = worner_fft(x)
-    N= length(x); 
+function out = worner_fft(x)
+    N = length(x); 
     x = bitrevorder(x);
     q = log2(N);
 
@@ -17,4 +17,5 @@ function y = worner_fft(x)
               x(s:e) = y;
         end
     end
+    out = y
 end

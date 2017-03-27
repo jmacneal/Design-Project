@@ -1,0 +1,708 @@
+Task "Perform Mapping" unsuccessful. See log for details.
+Generated logfile: 
+[0;32mInfo: *******************************************************************
+[0m[0;32mInfo: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+[0m[0;32m    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+[0m[0;32m    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+[0m[0;32m    Info: Your use of Altera Corporation's design tools, logic functions 
+[0m[0;32m    Info: and other software and tools, and its AMPP partner logic 
+[0m[0;32m    Info: functions, and any output files from any of the foregoing 
+[0m[0;32m    Info: (including device programming or simulation files), and any 
+[0m[0;32m    Info: associated documentation or information are expressly subject 
+[0m[0;32m    Info: to the terms and conditions of the Altera Program License 
+[0m[0;32m    Info: Subscription Agreement, Altera MegaCore Function License 
+[0m[0;32m    Info: Agreement, or other applicable license agreement, including, 
+[0m[0;32m    Info: without limitation, that your use is for the sole purpose of 
+[0m[0;32m    Info: programming logic devices manufactured by Altera and sold by 
+[0m[0;32m    Info: Altera or its authorized distributors.  Please refer to the 
+[0m[0;32m    Info: applicable agreement for further details.
+[0m[0;32m    Info: Processing started: Mon Mar 27 15:52:14 2017
+[0m[0;32mInfo: Command: quartus_sta -t OFDM_transmitter_Altera_QUARTUS_II_run.tcl
+[0m### Open existing Altera QUARTUS II 13.0.1 project hdl_prj/quartus_prj/OFDM_transmitter_quartus.qpf
+### Running PostMapTiming in Altera QUARTUS II 13.0.1 ...
+[0;32mInfo: *******************************************************************
+[0m[0;32mInfo: Running Quartus II 64-Bit Fitter
+[0m[0;32m    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+[0m[0;32m    Info: Processing started: Mon Mar 27 15:52:16 2017
+[0m[0;32mInfo: Command: quartus_fit --read_settings_files=on --write_settings_files=off OFDM_transmitter_quartus -c OFDM_transmitter_quartus --early_timing_estimate
+[0m[0;32mInfo: qfit2_default_script.tcl version: #1
+[0m[0;32mInfo: Project  = OFDM_transmitter_quartus
+[0m[0;32mInfo: Revision = OFDM_transmitter_quartus
+[0m[0;36mWarning (20028): Parallel compilation is not licensed and has been disabled
+[0m[0;32mInfo (119006): Selected device EP2C35F672C8 for design "OFDM_transmitter_quartus"
+[0m[0;32mInfo (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+[0m[0;36mWarning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+[0m[0;32mInfo (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+[0m[0;32m    Info (176445): Device EP2C35F672I8 is compatible
+[0m[0;32m    Info (176445): Device EP2C50F672C8 is compatible
+[0m[0;32m    Info (176445): Device EP2C50F672I8 is compatible
+[0m[0;32m    Info (176445): Device EP2C70F672C8 is compatible
+[0m[0;32m    Info (176445): Device EP2C70F672I8 is compatible
+[0m[0;32mInfo (169124): Fitter converted 3 user pins into dedicated programming pins
+[0m[0;32m    Info (169125): Pin ~ASDO~ is reserved at location E3
+[0m[0;32m    Info (169125): Pin ~nCSO~ is reserved at location D3
+[0m[0;32m    Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
+[0m[0;32mInfo (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+[0m[0;36mCritical Warning (169085): No exact pin location assignment(s) for 516 pins of 516 total pins
+[0m[0;32m    Info (169086): Pin ce_out not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[15][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[14][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[13][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[12][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[11][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[10][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[9][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[8][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[7][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[6][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[5][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[4][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[3][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[2][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[1][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin real_rsvd[0][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[15][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[14][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[13][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[12][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[11][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[10][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[9][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[8][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[7][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[6][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[5][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[4][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[3][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[2][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[1][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][0] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][1] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][2] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][3] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][4] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][5] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][6] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][7] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][8] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][9] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][10] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][11] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][12] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][13] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][14] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin imag[0][15] not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin clk_enable not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin clk not assigned to an exact location on the device
+[0m[0;32m    Info (169086): Pin reset not assigned to an exact location on the device
+[0m[0;32mInfo (332104): Reading SDC File: '../hdlsrc/OFDM_transmitter/clock_constraint.sdc'
+[0m[0;36mWarning (332153): Family doesn't support jitter analysis.
+[0m[0;32mInfo (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+[0m[0;32mInfo (332111): Found 1 clocks
+[0m[0;32m    Info (332111):   Period   Clock Name
+[0m[0;32m    Info (332111): ======== ============
+[0m[0;32m    Info (332111):   40.000          clk
+[0m[0;32mInfo (176353): Automatically promoted node clk (placed in PIN P2 (CLK2, LVDSCLK1p, Input))
+[0m[0;32m    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
+[0m[0;32mInfo (176353): Automatically promoted node reset (placed in PIN P1 (CLK3, LVDSCLK1n, Input))
+[0m[0;32m    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G1
+[0m[0;32mInfo (176233): Starting register packing
+[0m[0;32m[0m[0;32m[0m[0;32m[0m[0;32m[0m[0;32m[0m[0;32m[0m[0;32mInfo (176235): Finished register packing
+[0m[0;32m    Extra Info (176218): Packed 368 registers into blocks of type Embedded multiplier block
+[0m[0;32m    Extra Info (176218): Packed 434 registers into blocks of type Embedded multiplier output
+[0m[0;32m    Extra Info (176220): Created 223 register duplicates
+[0m[0;32mInfo (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+[0m[0;32m    Info (176211): Number of I/O pins in group: 514 (unused VREF, 3.3V VCCIO, 1 input, 513 output, 0 bidirectional)
+[0m[0;32m        Info (176212): I/O standards used: 3.3-V LVTTL.
+[0m[0;32mInfo (176215): I/O bank details before I/O pin placement
+[0m[0;32m    Info (176214): Statistics of I/O banks
+[0m[0;32m        Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  62 pins available
+[0m[0;32m        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  57 pins available
+[0m[0;32m        Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
+[0m[0;32m        Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
+[0m[0;32m        Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  65 pins available
+[0m[0;32m        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
+[0m[0;32m        Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
+[0m[0;32m        Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
+[0m[0;32mInfo (176215): I/O bank details after I/O pin placement
+[0m[0;32m    Info (176214): Statistics of I/O banks
+[0m[0;32m        Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  62 pins available
+[0m[0;32m        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  57 pins available
+[0m[0;32m        Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
+[0m[0;32m        Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
+[0m[0;32m        Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  65 pins available
+[0m[0;32m        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
+[0m[0;32m        Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
+[0m[0;32m        Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
+[0m[0;31mError (176205): Can't place 514 pins with 3.3-V LVTTL I/O standard because Fitter has only 470 such free pins available for general purpose I/O placement
+[0m[0;31mError (176204): Can't place pins due to device constraints
+[0m[0;32mInfo (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+[0m[0;31mError (171000): Can't fit design in device
+[0m[0;36mWarning (169069): Following 80 pins have nothing, GND, or VCC driving datain port -- changes to this connectivity may change fitting results
+[0m[0;32m    Info (169070): Pin real_rsvd[3][0] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][1] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][2] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][3] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][4] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][5] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][6] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][7] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][8] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[3][9] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][0] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][1] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][2] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][3] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][4] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][5] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][6] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][7] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][8] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[2][9] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][0] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][1] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][2] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][3] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][4] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][5] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][6] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][7] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][8] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[1][9] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][0] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][1] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][2] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][3] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][4] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][5] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][6] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][7] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][8] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin real_rsvd[0][9] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][0] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][1] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][2] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][3] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][4] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][5] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][6] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][7] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][8] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[3][9] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][0] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][1] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][2] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][3] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][4] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][5] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][6] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][7] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][8] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[2][9] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][0] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][1] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][2] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][3] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][4] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][5] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][6] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][7] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][8] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[1][9] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][0] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][1] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][2] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][3] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][4] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][5] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][6] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][7] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][8] has GND driving its datain port
+[0m[0;32m    Info (169070): Pin imag[0][9] has GND driving its datain port
+[0m[0;36mWarning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
+[0m[0;32mInfo (144001): Generated suppressed messages file /home/jake/hdl_prj/quartus_prj/OFDM_transmitter_quartus.fit.smsg
+[0m[0;31mError: Quartus II 64-Bit Fitter was unsuccessful. 3 errors, 6 warnings
+[0m[0;31m    Error: Peak virtual memory: 666 megabytes
+[0m[0;31m    Error: Processing ended: Mon Mar 27 15:52:22 2017
+[0m[0;31m    Error: Elapsed time: 00:00:06
+[0m[0;31m    Error: Total CPU time (on all processors): 00:00:06
+[0m------------------------------------------------
+ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.
+
+    while executing
+"execute_module -tool fit -args "--early_timing_estimate""
+    (file "OFDM_transmitter_Altera_QUARTUS_II_run.tcl" line 21)
+------------------------------------------------
+[0;31mError (23031): Evaluation of Tcl script OFDM_transmitter_Altera_QUARTUS_II_run.tcl unsuccessful
+[0m[0;31mError: Quartus II 64-Bit TimeQuest Timing Analyzer was unsuccessful. 9 errors, 6 warnings
+[0m[0;31m    Error: Peak virtual memory: 446 megabytes
+[0m[0;31m    Error: Processing ended: Mon Mar 27 15:52:23 2017
+[0m[0;31m    Error: Elapsed time: 00:00:09
+[0m[0;31m    Error: Total CPU time (on all processors): 00:00:08
+[0m
+Elapsed time is 10.3067 seconds.

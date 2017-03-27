@@ -1,0 +1,708 @@
+Task "Perform Logic Synthesis" successful.
+Generated logfile: 
+[0;32mInfo: *******************************************************************
+[0m[0;32mInfo: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+[0m[0;32m    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+[0m[0;32m    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+[0m[0;32m    Info: Your use of Altera Corporation's design tools, logic functions 
+[0m[0;32m    Info: and other software and tools, and its AMPP partner logic 
+[0m[0;32m    Info: functions, and any output files from any of the foregoing 
+[0m[0;32m    Info: (including device programming or simulation files), and any 
+[0m[0;32m    Info: associated documentation or information are expressly subject 
+[0m[0;32m    Info: to the terms and conditions of the Altera Program License 
+[0m[0;32m    Info: Subscription Agreement, Altera MegaCore Function License 
+[0m[0;32m    Info: Agreement, or other applicable license agreement, including, 
+[0m[0;32m    Info: without limitation, that your use is for the sole purpose of 
+[0m[0;32m    Info: programming logic devices manufactured by Altera and sold by 
+[0m[0;32m    Info: Altera or its authorized distributors.  Please refer to the 
+[0m[0;32m    Info: applicable agreement for further details.
+[0m[0;32m    Info: Processing started: Mon Mar 27 15:50:38 2017
+[0m[0;32mInfo: Command: quartus_sta -t OFDM_transmitter_Altera_QUARTUS_II_run.tcl
+[0m### Open existing Altera QUARTUS II 13.0.1 project hdl_prj/quartus_prj/OFDM_transmitter_quartus.qpf
+### Running Synthesis in Altera QUARTUS II 13.0.1 ...
+[0;32mInfo: *******************************************************************
+[0m[0;32mInfo: Running Quartus II 64-Bit Analysis & Synthesis
+[0m[0;32m    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+[0m[0;32m    Info: Processing started: Mon Mar 27 15:50:41 2017
+[0m[0;32mInfo: Command: quartus_map --read_settings_files=on --write_settings_files=off OFDM_transmitter_quartus -c OFDM_transmitter_quartus
+[0m[0;36mWarning (20028): Parallel compilation is not licensed and has been disabled
+[0m[0;32mInfo (12021): Found 1 design units, including 0 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/OFDM_transmitter_pkg.vhd
+[0m[0;32m    Info (12022): Found design unit 1: OFDM_transmitter_pkg
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_1-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_1
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_1_block-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_1_block
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block1.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_1_block1-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_1_block1
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block2.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_1_block2-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_1_block2
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_1_block3-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_1_block3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block4.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_1_block4-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_1_block4
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block5.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_1_block5-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_1_block5
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_1_block6.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_1_block6-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_1_block6
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_2-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_2
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_2_block-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_2_block
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block1.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_2_block1-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_2_block1
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block2.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_2_block2-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_2_block2
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_2_block3-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_2_block3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block4.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_2_block4-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_2_block4
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block5.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_2_block5-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_2_block5
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_2_block6.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_2_block6-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_2_block6
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_2.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_2-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_2
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLMULT_SDNF1_3-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLMULT_SDNF1_3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_3-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_4.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_4-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_4
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block1.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block1-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block1
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLMULT_SDNF1_3_block-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLMULT_SDNF1_3_block
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_6.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_6-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_6
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block2.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block2-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block2
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block1.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLMULT_SDNF1_3_block1-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLMULT_SDNF1_3_block1
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_7.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_7-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_7
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_8.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_8-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_8
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block3-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block4.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block4-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block4
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block2.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLMULT_SDNF1_3_block2-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLMULT_SDNF1_3_block2
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_10.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_10-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_10
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block5.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block5-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block5
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLMULT_SDNF1_3_block3-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLMULT_SDNF1_3_block3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_11.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_11-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_11
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_12.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_12-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_12
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block6.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block6-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block6
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block7.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block7-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block7
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block4.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLMULT_SDNF1_3_block4-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLMULT_SDNF1_3_block4
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_14.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_14-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_14
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block8.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block8-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block8
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block5.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLMULT_SDNF1_3_block5-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLMULT_SDNF1_3_block5
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_15.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_15-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_15
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLROM_3_16.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLROM_3_16-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLROM_3_16
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block9.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block9-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block9
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/Complex3Multiply_block10.vhd
+[0m[0;32m    Info (12022): Found design unit 1: Complex3Multiply_block10-rtl
+[0m[0;32m    Info (12023): Found entity 1: Complex3Multiply_block10
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/TWDLMULT_SDNF1_3_block6.vhd
+[0m[0;32m    Info (12022): Found design unit 1: TWDLMULT_SDNF1_3_block6-rtl
+[0m[0;32m    Info (12023): Found entity 1: TWDLMULT_SDNF1_3_block6
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_3-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_3_block-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_3_block
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block1.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_3_block1-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_3_block1
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block2.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_3_block2-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_3_block2
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_3_block3-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_3_block3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block4.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_3_block4-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_3_block4
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block5.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_3_block5-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_3_block5
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF1_3_block6.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF1_3_block6-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF1_3_block6
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_4-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_4
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_4_block-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_4_block
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block1.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_4_block1-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_4_block1
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block2.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_4_block2-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_4_block2
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block3.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_4_block3-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_4_block3
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block4.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_4_block4-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_4_block4
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block5.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_4_block5-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_4_block5
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/RADIX22FFT_SDNF2_4_block6.vhd
+[0m[0;32m    Info (12022): Found design unit 1: RADIX22FFT_SDNF2_4_block6-rtl
+[0m[0;32m    Info (12023): Found entity 1: RADIX22FFT_SDNF2_4_block6
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/IFFT_HDL_Optimized.vhd
+[0m[0;32m    Info (12022): Found design unit 1: IFFT_HDL_Optimized-rtl
+[0m[0;32m    Info (12023): Found entity 1: IFFT_HDL_Optimized
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/OFDM_transmitter_tc.vhd
+[0m[0;32m    Info (12022): Found design unit 1: OFDM_transmitter_tc-rtl
+[0m[0;32m    Info (12023): Found entity 1: OFDM_transmitter_tc
+[0m[0;32mInfo (12021): Found 2 design units, including 1 entities, in source file /home/jake/hdl_prj/hdlsrc/OFDM_transmitter/OFDM_transmitter.vhd
+[0m[0;32m    Info (12022): Found design unit 1: OFDM_transmitter-rtl
+[0m[0;32m    Info (12023): Found entity 1: OFDM_transmitter
+[0m[0;32mInfo (12127): Elaborating entity "OFDM_transmitter" for the top level hierarchy
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at OFDM_transmitter.vhd(270): object "Deserializer1D_innerRegCtrolEn" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at OFDM_transmitter.vhd(271): object "Deserializer1D_outBypassEn" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at OFDM_transmitter.vhd(349): object "IFFT_HDL_Optimized_out2" assigned a value but never read
+[0m[0;32mInfo (12129): Elaborating entity "OFDM_transmitter_tc" using architecture "A:rtl" for hierarchy "OFDM_transmitter_tc:u_OFDM_transmitter_tc"
+[0m[0;32mInfo (12129): Elaborating entity "IFFT_HDL_Optimized" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized"
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1133): object "dout_9_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1144): object "dout_3_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1149): object "dout_11_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1154): object "dout_2_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1170): object "dout_5_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1175): object "dout_13_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1180): object "dout_2_vld_2" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1186): object "dout_7_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1191): object "dout_15_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1196): object "dout_2_vld_3" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1199): object "twdl_3_3_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1207): object "twdlXdin_3_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1217): object "dout_3_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1220): object "dout_4_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1231): object "twdlXdin_5_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1234): object "twdl_3_7_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1242): object "twdlXdin_7_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1247): object "dout_5_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1252): object "dout_7_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1253): object "dout_4_vld_2" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1255): object "dout_4_vld_3" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1262): object "dout_2_vld_4" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1268): object "dout_2_vld_5" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1278): object "twdlXdin_9_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1284): object "dout_2_vld_6" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1290): object "dout_2_vld_7" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1293): object "twdl_3_11_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1301): object "twdlXdin_11_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1306): object "dout_9_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1311): object "dout_11_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1312): object "dout_4_vld_4" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1314): object "dout_4_vld_5" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1325): object "twdlXdin_13_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1328): object "twdl_3_15_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1336): object "twdlXdin_15_vld" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1341): object "dout_13_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1346): object "dout_15_vld_1" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1347): object "dout_4_vld_6" assigned a value but never read
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at IFFT_HDL_Optimized.vhd(1349): object "dout_4_vld_7" assigned a value but never read
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_1" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_1:u_SDNF1_1_1"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_1_block3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_1_block3:u_SDNF1_1_9"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_2" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_2:u_SDNF2_2_1"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_1_block" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_1_block:u_SDNF1_1_3"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_1_block4" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_1_block4:u_SDNF1_1_11"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_2_block" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_2_block:u_SDNF2_2_3"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_2" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_2:u_twdlROM_3_2"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLMULT_SDNF1_3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3:u_TWDLMULT_SDNF1_3_1"
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3:u_TWDLMULT_SDNF1_3_1|Complex3Multiply:u_MUL3_2"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_1_block1" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_1_block1:u_SDNF1_1_5"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_1_block5" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_1_block5:u_SDNF1_1_13"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_2_block1" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_2_block1:u_SDNF2_2_5"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_1_block2" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_1_block2:u_SDNF1_1_7"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_1_block6" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_1_block6:u_SDNF1_1_15"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_2_block2" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_2_block2:u_SDNF2_2_7"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_3:u_twdlROM_3_3"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_4" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_4:u_twdlROM_3_4"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLMULT_SDNF1_3_block" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3"
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at TWDLMULT_SDNF1_3_block.vhd(102): object "twdlXdin1_vld" assigned a value but never read
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block:u_MUL3_1"
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block1" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block1:u_MUL3_2"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_3:u_SDNF1_3_1"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_3_block" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_3_block:u_SDNF1_3_3"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_4" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_4:u_SDNF2_4_1"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_4_block" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_4_block:u_SDNF2_4_3"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_6" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_6:u_twdlROM_3_6"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLMULT_SDNF1_3_block1" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block1:u_TWDLMULT_SDNF1_3_5"
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block2" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block1:u_TWDLMULT_SDNF1_3_5|Complex3Multiply_block2:u_MUL3_2"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_7" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_7:u_twdlROM_3_7"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_8" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_8:u_twdlROM_3_8"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLMULT_SDNF1_3_block2" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7"
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at TWDLMULT_SDNF1_3_block2.vhd(102): object "twdlXdin1_vld" assigned a value but never read
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1"
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block4" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block4:u_MUL3_2"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_3_block1" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_3_block1:u_SDNF1_3_5"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_3_block2" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_3_block2:u_SDNF1_3_7"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_4_block1" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_4_block1:u_SDNF2_4_5"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_4_block2" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_4_block2:u_SDNF2_4_7"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_2_block3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_2_block3:u_SDNF2_2_9"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_2_block4" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_2_block4:u_SDNF2_2_11"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_10" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_10:u_twdlROM_3_10"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLMULT_SDNF1_3_block3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9"
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block5" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_2_block5" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_2_block5:u_SDNF2_2_13"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_2_block6" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_2_block6:u_SDNF2_2_15"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_11" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_11:u_twdlROM_3_11"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_12" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_12:u_twdlROM_3_12"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLMULT_SDNF1_3_block4" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11"
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at TWDLMULT_SDNF1_3_block4.vhd(102): object "twdlXdin1_vld" assigned a value but never read
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block6" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1"
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block7" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block7:u_MUL3_2"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_3_block3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_3_block3:u_SDNF1_3_9"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_3_block4" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_3_block4:u_SDNF1_3_11"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_4_block3" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_4_block3:u_SDNF2_4_9"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_4_block4" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_4_block4:u_SDNF2_4_11"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_14" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_14:u_twdlROM_3_14"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLMULT_SDNF1_3_block5" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13"
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block8" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_15" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_15:u_twdlROM_3_15"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLROM_3_16" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLROM_3_16:u_twdlROM_3_16"
+[0m[0;32mInfo (12129): Elaborating entity "TWDLMULT_SDNF1_3_block6" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15"
+[0m[0;36mWarning (10036): Verilog HDL or VHDL warning at TWDLMULT_SDNF1_3_block6.vhd(102): object "twdlXdin1_vld" assigned a value but never read
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block9" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1"
+[0m[0;32mInfo (12129): Elaborating entity "Complex3Multiply_block10" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_3_block5" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_3_block5:u_SDNF1_3_13"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF1_3_block6" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF1_3_block6:u_SDNF1_3_15"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_4_block5" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_4_block5:u_SDNF2_4_13"
+[0m[0;32mInfo (12129): Elaborating entity "RADIX22FFT_SDNF2_4_block6" using architecture "A:rtl" for hierarchy "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|RADIX22FFT_SDNF2_4_block6:u_SDNF2_4_15"
+[0m[0;32mInfo (19000): Inferred 2 megafunctions from design logic
+[0m[0;32m    Info (276034): Inferred altshift_taps megafunction from the following design logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|din1_im_dly1_rtl_0"
+[0m[0;32m        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+[0m[0;32m        Info (286033): Parameter TAP_DISTANCE set to 9
+[0m[0;32m        Info (286033): Parameter WIDTH set to 28
+[0m[0;32m    Info (276034): Inferred altshift_taps megafunction from the following design logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|din2_im_dly1_rtl_0"
+[0m[0;32m        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+[0m[0;32m        Info (286033): Parameter TAP_DISTANCE set to 4
+[0m[0;32m        Info (286033): Parameter WIDTH set to 84
+[0m[0;32mInfo (278001): Inferred 33 megafunctions from design logic
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block7:u_MUL3_2|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block7:u_MUL3_2|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block7:u_MUL3_2|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block4:u_MUL3_2|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block4:u_MUL3_2|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block1:u_TWDLMULT_SDNF1_3_5|Complex3Multiply_block2:u_MUL3_2|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block1:u_TWDLMULT_SDNF1_3_5|Complex3Multiply_block2:u_MUL3_2|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|Mult1"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block4:u_MUL3_2|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block1:u_TWDLMULT_SDNF1_3_5|Complex3Multiply_block2:u_MUL3_2|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block1:u_MUL3_2|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3:u_TWDLMULT_SDNF1_3_1|Complex3Multiply:u_MUL3_2|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block:u_MUL3_1|Mult0"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block:u_MUL3_1|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block1:u_MUL3_2|Mult2"
+[0m[0;32m    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3:u_TWDLMULT_SDNF1_3_1|Complex3Multiply:u_MUL3_2|Mult2"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|altshift_taps:din1_im_dly1_rtl_0"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|altshift_taps:din1_im_dly1_rtl_0" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+[0m[0;32m    Info (12134): Parameter "TAP_DISTANCE" = "9"
+[0m[0;32m    Info (12134): Parameter "WIDTH" = "28"
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_i1n.tdf
+[0m[0;32m    Info (12023): Found entity 1: shift_taps_i1n
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_uta1.tdf
+[0m[0;32m    Info (12023): Found entity 1: altsyncram_uta1
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/cntr_pkf.tdf
+[0m[0;32m    Info (12023): Found entity 1: cntr_pkf
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/cmpr_7cc.tdf
+[0m[0;32m    Info (12023): Found entity 1: cmpr_7cc
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/cntr_f4h.tdf
+[0m[0;32m    Info (12023): Found entity 1: cntr_f4h
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|altshift_taps:din2_im_dly1_rtl_0"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|altshift_taps:din2_im_dly1_rtl_0" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+[0m[0;32m    Info (12134): Parameter "TAP_DISTANCE" = "4"
+[0m[0;32m    Info (12134): Parameter "WIDTH" = "84"
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_f1n.tdf
+[0m[0;32m    Info (12023): Found entity 1: shift_taps_f1n
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kta1.tdf
+[0m[0;32m    Info (12023): Found entity 1: altsyncram_kta1
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/cntr_ikf.tdf
+[0m[0;32m    Info (12023): Found entity 1: cntr_ikf
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/cntr_94h.tdf
+[0m[0;32m    Info (12023): Found entity 1: cntr_94h
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult0"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult0" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/mult_h1t.tdf
+[0m[0;32m    Info (12023): Found entity 1: mult_h1t
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult1"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult1" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "14"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "30"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "30"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/mult_d1t.tdf
+[0m[0;32m    Info (12023): Found entity 1: mult_d1t
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|lpm_mult:Mult0"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|lpm_mult:Mult0" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult0"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult0" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult1"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult1" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "15"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "31"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "31"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/mult_f1t.tdf
+[0m[0;32m    Info (12023): Found entity 1: mult_f1t
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult2"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult2" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "17"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "17"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "34"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "34"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/mult_l1t.tdf
+[0m[0;32m    Info (12023): Found entity 1: mult_l1t
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult2"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult2" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "17"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "33"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "33"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12021): Found 1 design units, including 1 entities, in source file db/mult_j1t.tdf
+[0m[0;32m    Info (12023): Found entity 1: mult_j1t
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|lpm_mult:Mult2"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|lpm_mult:Mult2" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "17"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "17"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "34"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "34"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult0"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult0" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult1"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult1" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "14"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "30"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "30"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|lpm_mult:Mult0"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|lpm_mult:Mult0" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|lpm_mult:Mult2"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|lpm_mult:Mult2" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "17"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "33"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "33"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult2"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult2" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "17"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "33"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "33"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult0"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult0" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "32"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult1"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult1" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "15"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "31"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "31"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (12130): Elaborated megafunction instantiation "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult2"
+[0m[0;32mInfo (12133): Instantiated megafunction "IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult2" with the following parameter:
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHA" = "17"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHB" = "16"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHP" = "33"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHR" = "33"
+[0m[0;32m    Info (12134): Parameter "LPM_WIDTHS" = "1"
+[0m[0;32m    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+[0m[0;32m    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+[0m[0;32m    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+[0m[0;32mInfo (13000): Registers with preset signals will power-up high
+[0m[0;32mInfo (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+[0m[0;36mWarning (13024): Output pins are stuck at VCC or GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][0]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][1]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][2]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][3]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][4]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][5]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][6]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][7]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][8]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[3][9]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][0]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][1]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][2]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][3]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][4]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][5]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][6]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][7]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][8]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[2][9]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][0]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][1]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][2]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][3]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][4]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][5]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][6]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][7]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][8]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[1][9]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][0]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][1]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][2]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][3]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][4]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][5]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][6]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][7]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][8]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "real_rsvd[0][9]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][0]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][1]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][2]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][3]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][4]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][5]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][6]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][7]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][8]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[3][9]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][0]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][1]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][2]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][3]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][4]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][5]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][6]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][7]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][8]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[2][9]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][0]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][1]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][2]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][3]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][4]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][5]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][6]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][7]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][8]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[1][9]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][0]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][1]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][2]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][3]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][4]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][5]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][6]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][7]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][8]" is stuck at GND
+[0m[0;36m    Warning (13410): Pin "imag[0][9]" is stuck at GND
+[0m[0;32mInfo (17049): 288 registers lost all their fanouts during netlist optimizations.
+[0m[0;32mInfo (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+[0m[0;32m    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+[0m[0;32mInfo (21057): Implemented 3731 device resources after synthesis - the final resource count might be different
+[0m[0;32m    Info (21058): Implemented 3 input pins
+[0m[0;32m    Info (21059): Implemented 513 output pins
+[0m[0;32m    Info (21061): Implemented 3037 logic cells
+[0m[0;32m    Info (21064): Implemented 112 RAM segments
+[0m[0;32m    Info (21062): Implemented 66 DSP elements
+[0m[0;32mInfo: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 128 warnings
+[0m[0;32m    Info: Peak virtual memory: 834 megabytes
+[0m[0;32m    Info: Processing ended: Mon Mar 27 15:50:55 2017
+[0m[0;32m    Info: Elapsed time: 00:00:14
+[0m[0;32m    Info: Total CPU time (on all processors): 00:00:14
+[0m### Synthesis Complete.
+### Close Altera QUARTUS II 13.0.1 project.
+[0;32mInfo (23030): Evaluation of Tcl script OFDM_transmitter_Altera_QUARTUS_II_run.tcl was successful
+[0m[0;32mInfo: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 128 warnings
+[0m[0;32m    Info: Peak virtual memory: 430 megabytes
+[0m[0;32m    Info: Processing ended: Mon Mar 27 15:50:55 2017
+[0m[0;32m    Info: Elapsed time: 00:00:17
+[0m[0;32m    Info: Total CPU time (on all processors): 00:00:17
+[0m
+Elapsed time is 18.7833 seconds.

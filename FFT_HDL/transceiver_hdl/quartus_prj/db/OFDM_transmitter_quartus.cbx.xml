@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="OFDM_transmitter_quartus">
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult2" CBX_FILE_NAME="mult_l1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block1:u_MUL3_2|lpm_mult:Mult2" CBX_FILE_NAME="mult_j1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3:u_TWDLMULT_SDNF1_3_1|Complex3Multiply:u_MUL3_2|lpm_mult:Mult2" CBX_FILE_NAME="mult_j1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block4:u_MUL3_2|lpm_mult:Mult2" CBX_FILE_NAME="mult_l1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block7:u_MUL3_2|lpm_mult:Mult2" CBX_FILE_NAME="mult_l1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult2" CBX_FILE_NAME="mult_j1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block1:u_TWDLMULT_SDNF1_3_5|Complex3Multiply_block2:u_MUL3_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block1:u_TWDLMULT_SDNF1_3_5|Complex3Multiply_block2:u_MUL3_2|lpm_mult:Mult1" CBX_FILE_NAME="mult_f1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block1:u_TWDLMULT_SDNF1_3_5|Complex3Multiply_block2:u_MUL3_2|lpm_mult:Mult2" CBX_FILE_NAME="mult_j1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult1" CBX_FILE_NAME="mult_d1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|lpm_mult:Mult1" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block:u_MUL3_1|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block3:u_TWDLMULT_SDNF1_3_9|Complex3Multiply_block5:u_MUL3_2|lpm_mult:Mult2" CBX_FILE_NAME="mult_j1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|Complex3Multiply_block8:u_MUL3_2|lpm_mult:Mult2" CBX_FILE_NAME="mult_l1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult1" CBX_FILE_NAME="mult_f1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|lpm_mult:Mult1" CBX_FILE_NAME="mult_f1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|altshift_taps:din1_im_dly1_rtl_0" CBX_FILE_NAME="shift_taps_i1n.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block1:u_MUL3_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block:u_TWDLMULT_SDNF1_3_3|Complex3Multiply_block:u_MUL3_1|lpm_mult:Mult2" CBX_FILE_NAME="mult_j1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3:u_TWDLMULT_SDNF1_3_1|Complex3Multiply:u_MUL3_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block3:u_MUL3_1|lpm_mult:Mult2" CBX_FILE_NAME="mult_j1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block4:u_MUL3_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block6:u_MUL3_1|lpm_mult:Mult2" CBX_FILE_NAME="mult_j1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block7:u_MUL3_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block5:u_TWDLMULT_SDNF1_3_13|altshift_taps:din2_im_dly1_rtl_0" CBX_FILE_NAME="shift_taps_f1n.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block9:u_MUL3_1|lpm_mult:Mult1" CBX_FILE_NAME="mult_f1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block2:u_TWDLMULT_SDNF1_3_7|Complex3Multiply_block4:u_MUL3_2|lpm_mult:Mult1" CBX_FILE_NAME="mult_f1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block4:u_TWDLMULT_SDNF1_3_11|Complex3Multiply_block7:u_MUL3_2|lpm_mult:Mult1" CBX_FILE_NAME="mult_h1t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OFDM_transmitter|IFFT_HDL_Optimized:u_IFFT_HDL_Optimized|TWDLMULT_SDNF1_3_block6:u_TWDLMULT_SDNF1_3_15|Complex3Multiply_block10:u_MUL3_2|lpm_mult:Mult1" CBX_FILE_NAME="mult_d1t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
