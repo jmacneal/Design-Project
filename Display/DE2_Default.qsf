@@ -497,6 +497,73 @@ set_global_assignment -name SEED 1
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_16.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_15.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_14.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_12.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_11.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_10.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_8.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_7.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_6.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_4.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLROM_3_2.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLMULT_SDNF1_3_block6.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLMULT_SDNF1_3_block5.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLMULT_SDNF1_3_block4.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLMULT_SDNF1_3_block3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLMULT_SDNF1_3_block2.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLMULT_SDNF1_3_block1.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLMULT_SDNF1_3_block.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/TWDLMULT_SDNF1_3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_4_block6.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_4_block5.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_4_block4.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_4_block3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_4_block2.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_4_block1.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_4_block.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_4.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_2_block6.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_2_block5.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_2_block4.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_2_block3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_2_block2.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_2_block1.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_2_block.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF2_2.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_3_block6.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_3_block5.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_3_block4.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_3_block3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_3_block2.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_3_block1.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_3_block.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_1_block6.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_1_block5.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_1_block4.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_1_block3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_1_block2.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_1_block1.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_1_block.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/RADIX22FFT_SDNF1_1.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/FFT_HDL_Optimized.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/fft_16_bit_pkg.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/fft_16_bit.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block10.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block9.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block8.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block7.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block6.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block5.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block4.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block3.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block2.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block1.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply_block.vhd
+set_global_assignment -name VHDL_FILE hdlsrc/fft_16_bit/Complex3Multiply.vhd
 set_global_assignment -name SYSTEMVERILOG_FILE src/convert_inputs.sv
 set_global_assignment -name VERILOG_FILE VGA_Controller/VGA_Controller.v
 set_global_assignment -name CPP_INCLUDE_FILE VGA_Controller/VGA_Param.h
@@ -513,4 +580,8 @@ set_global_assignment -name VERILOG_FILE const_4.v
 set_global_assignment -name VERILOG_FILE 2mux1_4.v
 set_global_assignment -name BDF_FILE top_level.bdf
 set_global_assignment -name SYSTEMVERILOG_FILE src/bar_display.sv
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
