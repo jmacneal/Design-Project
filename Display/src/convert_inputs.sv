@@ -22,7 +22,7 @@ module convert_inputs(switches, output_array);
 		// For each of the switches, set all the values in the entry to the switch value.
 		for (i = 0; i <= 15; i = i + 1) begin
 			if (switches[i] == 1'b1) begin
-				output_array[i] = 16'b1;
+				output_array[i] = 16'h8000;
 			end
 			else begin
 				output_array[i] = 16'b0;

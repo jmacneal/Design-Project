@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 72 56 240 72)
+	(rect -200 56 -32 72)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
 	(text "FSMCLK" (rect 5 0 49 10)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 72 24 240 40)
+	(rect -200 24 -32 40)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
 	(text "Coord_X[9..0]" (rect 5 0 71 10)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 72 40 240 56)
+	(rect -200 40 -32 56)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
 	(text "Coord_Y[9..0]" (rect 5 0 71 10)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 40 -40 208 -24)
+	(rect -200 -32 -32 -16)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
 	(text "SW[17..0]" (rect 5 0 52 10)(font "Arial" ))
 	(pt 168 8)
@@ -189,6 +189,28 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 192 96))
 	)
 )
+(symbol
+	(rect 32 -56 288 24)
+	(text "convert_inputs" (rect 5 0 75 10)(font "Arial" ))
+	(text "inst1" (rect 8 64 31 74)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "switches[17..0]" (rect 0 0 70 10)(font "Arial" ))
+		(text "switches[17..0]" (rect 21 27 91 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "output_array[15..0][15..0]" (rect 0 0 119 10)(font "Arial" ))
+		(text "output_array[15..0][15..0]" (rect 135 27 254 37)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 64))
+	)
+)
 (connector
 	(pt 576 32)
 	(pt 688 32)
@@ -205,16 +227,36 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 368 32)
-	(pt 240 32)
-	(bus)
-)
-(connector
-	(pt 368 48)
-	(pt 240 48)
-	(bus)
-)
-(connector
+	(pt -32 64)
 	(pt 368 64)
-	(pt 240 64)
+)
+(connector
+	(pt -32 32)
+	(pt 368 32)
+	(bus)
+)
+(connector
+	(pt -32 48)
+	(pt 368 48)
+	(bus)
+)
+(connector
+	(pt 32 -24)
+	(pt -32 -24)
+	(bus)
+)
+(connector
+	(pt 288 -24)
+	(pt 312 -24)
+	(bus)
+)
+(connector
+	(pt 312 -24)
+	(pt 312 16)
+	(bus)
+)
+(connector
+	(pt 312 16)
+	(pt 368 16)
+	(bus)
 )
