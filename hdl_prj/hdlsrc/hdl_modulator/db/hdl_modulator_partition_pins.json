@@ -1,0 +1,333 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ce_out",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[32]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[33]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[34]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[35]",
+					"strict" : false
+				},
+				{
+					"name" : "Baseband_Mixed_Signal[36]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_enable",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Imag[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Real_rsvd[19]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_x",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

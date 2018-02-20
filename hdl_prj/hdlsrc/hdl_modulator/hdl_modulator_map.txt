@@ -1,0 +1,3 @@
+ --> hdl_modulator_pac
+hdl_modulator/wave_generator --> wave_generator
+hdl_modulator --> hdl_modulator
