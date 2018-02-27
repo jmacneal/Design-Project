@@ -1,0 +1,6 @@
+ --> hdl_modulator_hdl_modulator_pkg
+hdl_modulator/wave_generator/sincos hdl/cos_hdl --> hdl_modulator_cos_hdl
+hdl_modulator/wave_generator/sincos hdl/sin_hdl --> hdl_modulator_sin_hdl
+hdl_modulator/wave_generator/sincos hdl --> hdl_modulator_sincos_hdl
+hdl_modulator/wave_generator --> hdl_modulator_wave_generator
+hdl_modulator --> hdl_modulator_hdl_modulator
