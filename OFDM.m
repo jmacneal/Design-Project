@@ -31,175 +31,121 @@ x=1;
 si=1; %for BER rows
 %%
 for d=1:100
-data = t_data(x:x+95);
-x=x+96;
-dec = encode(data, symbol_size, trellis)
-
-%%
-%16-QAM Modulation
-
-M=16;
-y = qammod(dec,M);
-% scatterplot(y);
-
-
-%%
-% Pilot insertion
-
-lendata=length(y);
-pilt=3+3j;
-nofpits=4;
-
-k=1;
-
-for i=(1:13:52)
+    data = t_data(x:x+95);
+    x=x+96;
+    dec = encode(data, symbol_size, trellis);
     
-    pilt_data1(i)=pilt;
+    cext_data = transmitter(dec);
 
-    for j=(i+1:i+12);
-        pilt_data1(j)=y(k);
-        k=k+1;
+    %%
+    % Channel
+
+     % SNR
+
+     o=1;
+    for snr=0:2:50
+
+    ofdm_sig=awgn(cext_data,snr,'measured'); % Adding white Gaussian Noise
+    % figure;
+    % index=1:80;
+    % plot(index,cext_data,'b',index,ofdm_sig,'r'); %plot both signals
+    % legend('Original Signal to be Transmitted','Signal with AWGN');
+
+
+    %%
+    %                   RECEIVER
+    %%
+    %Removing Cyclic Extension
+
+    for i=1:64
+
+        rxed_sig(i)=ofdm_sig(i+16);
+
     end
-end
-
-pilt_data1=pilt_data1';   % size of pilt_data =52
-pilt_data(1:52)=pilt_data1(1:52);    % upsizing to 64
-pilt_data(13:64)=pilt_data1(1:52);   % upsizing to 64
-
-for i=1:52
-    
-    pilt_data(i+6)=pilt_data1(i);
-    
-end
 
 
-%%
-% IFFT
+    %%
+    % FFT
 
-ifft_sig=ifft(pilt_data',64);
+    ff_sig=fft(rxed_sig,64);
 
-
-%%
-% Adding Cyclic Extension
-
-cext_data=zeros(80,1);
-cext_data(1:16)=ifft_sig(49:64);
-for i=1:64
-    
-    cext_data(i+16)=ifft_sig(i);
-    
-end
+    %%
+    % Pilot Synch%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%
-% Channel
+    for i=1:52
 
- % SNR
+        synched_sig1(i)=ff_sig(i+6);
 
- o=1;
-for snr=0:2:50
-
-ofdm_sig=awgn(cext_data,snr,'measured'); % Adding white Gaussian Noise
-% figure;
-% index=1:80;
-% plot(index,cext_data,'b',index,ofdm_sig,'r'); %plot both signals
-% legend('Original Signal to be Transmitted','Signal with AWGN');
-
-
-%%
-%                   RECEIVER
-%%
-%Removing Cyclic Extension
-
-for i=1:64
-    
-    rxed_sig(i)=ofdm_sig(i+16);
-    
-end
-
-
-%%
-% FFT
-
-ff_sig=fft(rxed_sig,64);
-
-%%
-% Pilot Synch%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-for i=1:52
-    
-    synched_sig1(i)=ff_sig(i+6);
-    
-end
-
-k=1;
-
-for i=(1:13:52)
-        
-    for j=(i+1:i+12);
-        synched_sig(k)=synched_sig1(j);
-        k=k+1;
     end
-end
 
-% scatterplot(synched_sig)
+    k=1;
 
+    for i=(1:13:52)
 
-%%
-% Demodulation
-dem_data= qamdemod(synched_sig,16);
+        for j=(i+1:i+12);
+            synched_sig(k)=synched_sig1(j);
+            k=k+1;
+        end
+    end
 
-
-%% 
-% Decimal to binary conversion
-
-bin=de2bi(dem_data','left-msb');
-bin=bin';
+    % scatterplot(synched_sig)
 
 
-%%
-% De-Interleaving
+    %%
+    % Demodulation
+    dem_data= qamdemod(synched_sig,16);
 
 
-deintlvddata = matdeintrlv(bin,2,2); % De-Interleave
-deintlvddata=deintlvddata';
-deintlvddata=deintlvddata(:)';
+    %% 
+    % Decimal to binary conversion
+
+    bin=de2bi(dem_data','left-msb');
+    bin=bin';
+
+
+    %%
+    % De-Interleaving
+
+
+    deintlvddata = matdeintrlv(bin,2,2); % De-Interleave
+    deintlvddata=deintlvddata';
+    deintlvddata=deintlvddata(:)';
 
 
 
 
-%%
-%Decoding data
-n=6;
-k=3;
-decodedata =vitdec(deintlvddata,trellis,5,'trunc','hard');  % decoding datausing veterbi decoder
-rxed_data=decodedata;
+    %%
+    %Decoding data
+    n=6;
+    k=3;
+    decodedata =vitdec(deintlvddata,trellis,5,'trunc','hard');  % decoding datausing veterbi decoder
+    rxed_data=decodedata;
 
-%%
-% Calculating BER
-rxed_data=rxed_data(:)';
-errors=0;
-
-
-c=xor(data,rxed_data);
-errors=nnz(c);
-
-% for i=1:length(data)
-%     
-%        
-%     if rxed_data(i)~=data(i);
-%         errors=errors+1;     
-%      
-%     end
-% end
+    %%
+    % Calculating BER
+    rxed_data=rxed_data(:)';
+    errors=0;
 
 
-BER(si,o)=errors/length(data);
-o=o+1;
+    c=xor(data,rxed_data);
+    errors=nnz(c);
 
- end % SNR loop ends here
- si=si+1;
+    % for i=1:length(data)
+    %     
+    %        
+    %     if rxed_data(i)~=data(i);
+    %         errors=errors+1;     
+    %      
+    %     end
+    % end
+
+
+    BER(si,o)=errors/length(data);
+    o=o+1;
+
+     end % SNR loop ends here
+     si=si+1;
 end % main data loop
 
 %%
