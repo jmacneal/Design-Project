@@ -20,42 +20,20 @@ clc
 %%
 % Generating and coding data
 t_data=randi(2, 9600,1)' - 1;
-x=1;
-si=1; %for BER rows
-%%
-for d=1:100
-data=t_data(x:x+95);
-x=x+96;
-k=3;
-n=6;
-s1=size(data,2);  % Size of input matrix
-j=s1/k;
-
+symbol_size = 4;
 %%
 % Convolutionally encoding data 
 constlen=7;
 codegen = [171 133];    % Polynomial
 trellis = poly2trellis(constlen, codegen);
-codedata = convenc(data, trellis);
-
-
-
+% Encoded Data
+x=1;
+si=1; %for BER rows
 %%
-%Interleaving coded data
-
-s2=size(codedata,2);
-j=s2/4;
-matrix=reshape(codedata,j,4);
-
-intlvddata = matintrlv(matrix',2,2)'; % Interleave.
-intlvddata=intlvddata';
-
-
-%%
-% Binary to decimal conversion
-
-dec=bi2de(intlvddata','left-msb');
-
+for d=1:100
+data = t_data(x:x+95);
+x=x+96;
+dec = encode(data, symbol_size, trellis)
 
 %%
 %16-QAM Modulation
