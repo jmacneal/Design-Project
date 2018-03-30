@@ -24,7 +24,7 @@ input_data=randi(2, 9600,1)' - 1;
 num_symbols = 16;
 symbol_size = log2(num_symbols);
 prefix = 16;
-fft_size = 64;
+fft_size = 48;
 %%
 % Convolutionally encoding data 
 constlen=7;
