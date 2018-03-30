@@ -15,8 +15,7 @@ function decoded_data = decode(dec_data, trellis);
 
     %%
     %Decoding data
-    decodedata = vitdec(deintlvddata,trellis,5,'trunc','hard');  % decoding datausing veterbi decoder
-    rxed_data=decodedata;
+    decoded_data = vitdec(deintlvddata,trellis,5,'trunc','hard');  % decoding datausing veterbi decoder
 end
 
 
