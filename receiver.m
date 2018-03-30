@@ -1,21 +1,20 @@
 %receiver : Receive data (from AWGN channel or direct), remove CRC,
 %demodulate
-function [demodulated_data] = receiver(signal);
-
-
+function [demodulated_data] = receiver(signal, num_symbols, prefix, fft_size)
     %%
     %                   RECEIVER
     %%
     %Removing Cyclic Extension
-
-    for i=1:64
-        rxed_sig(i)=signal(i+16);
+    signal_size = size(signal,1);
+    rxed_sig = zeros(signal_size);
+    for i=1:signal_size-prefix
+        rxed_sig(i)=signal(i+prefix);
     end
 
     %%
     % FFT
 
-    ff_sig=fft(rxed_sig,64);
+    ff_sig=fft(rxed_sig,fft_size);
 
     %%
     % Pilot Synch%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -38,5 +37,5 @@ function [demodulated_data] = receiver(signal);
 
     %%
     % Demodulation
-    demodulated_data= qamdemod(synched_sig,16);
+    demodulated_data= qamdemod(synched_sig, num_symbols);
 end

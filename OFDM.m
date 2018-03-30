@@ -20,8 +20,11 @@ clc
 
 %%
 % Generating and coding data
-t_data=randi(2, 9600,1)' - 1;
-symbol_size = 4;
+input_data=randi(2, 9600,1)' - 1;
+num_symbols = 16;
+symbol_size = log2(num_symbols);
+prefix = 16;
+fft_size = 64;
 %%
 % Convolutionally encoding data 
 constlen=7;
@@ -34,42 +37,32 @@ si=1; %for BER rows
 
 
 for d=1:100
-    data = t_data(x:x+95);
+    data = input_data(x:x+95);
     x=x+96;
-    dec = encode(data, symbol_size, trellis);
-    
-    cext_data = transmitter(dec);
+    encoded_data = encode(data, symbol_size, trellis);
+    cext_data = transmitter(encoded_data, num_symbols, prefix, fft_size);
 
-    %%
-    % Channel
-
-     % SNR
-
-     o=1;
+    o=1;
+    % Signal-to-Noise Ratio
     for snr=0:2:50
+       %% Channel Model
+        ofdm_sig=awgn(cext_data,snr,'measured'); % Adding white Gaussian Noise
+       % figure;
+       % index=1:80;
+       % plot(index,cext_data,'b',index,ofdm_sig,'r'); %plot both signals
+       % legend('Original Signal to be Transmitted','Signal with AWGN');
 
-    ofdm_sig=awgn(cext_data,snr,'measured'); % Adding white Gaussian Noise
-    % figure;
-    % index=1:80;
-    % plot(index,cext_data,'b',index,ofdm_sig,'r'); %plot both signals
-    % legend('Original Signal to be Transmitted','Signal with AWGN');
+        dem_data = receiver(ofdm_sig, num_symbols, prefix, fft_size);
+        rxed_data=decode(dem_data, trellis);
 
+        %% Calculating BER
+        rxed_data=rxed_data(:)';
+        error_cnt=0;
+        c=xor(data,rxed_data);
+        error_cnt=nnz(c);
 
-    dem_data = receiver(ofdm_sig);
-    rxed_data=decode(dem_data, trellis);
-
-    %%
-    % Calculating BER
-    rxed_data=rxed_data(:)';
-    errors=0;
-
-
-    c=xor(data,rxed_data);
-    errors=nnz(c);
-
-    BER(si,o)=errors/length(data);
-    o=o+1;
-
+        BER(si,o)=error_cnt/length(data);
+        o=o+1;
      end % SNR loop ends here
      si=si+1;
 end % main data loop
@@ -78,11 +71,10 @@ end % main data loop
 
 %%
 % Time averaging for optimum results
-
-for col=1:25;        %%%change if SNR loop Changed
-    ber(1,col)=0;  
-    for row=1:100;
-        ber(1,col)=ber(1,col)+BER(row,col);
+ber = zeros(1,25);
+for col=1:25        %%%change if SNR loop Changed
+    for row=1:100
+        ber(col)=ber(col)+BER(row,col);
     end
 end
 ber=ber./100; 
