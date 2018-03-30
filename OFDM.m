@@ -20,17 +20,20 @@ clc
 
 %%
 % Generating and coding data
-input_data=randi(2, 9600,1)' - 1;
-num_symbols = 16;
-symbol_size = log2(num_symbols);
-prefix = 16;
-fft_size = 64;
+num_packets = 100; % Number of packets to transmit
+qam_size = 16; % qam symbol size (i.e., 16-QAM)
+symbol_size = log2(qam_size); % bits per symbol
+packet_size = 24; %packet size, in symbols
+num_bits = num_packets*packet_size*symbol_size;
+prefix = 16; %number of symbols in cyclic prefix
+fft_size = 64; %N-point fft/ifft
+input_data=randi(2, num_bits,1)' - 1;
+
 %%
 % Convolutionally encoding data 
 constlen=7;
 codegen = [171 133];    % Polynomial
 trellis = poly2trellis(constlen, codegen);
-% Encoded Data
 x=1;
 si=1; %for BER rows
 %%
@@ -39,21 +42,25 @@ si=1; %for BER rows
 for d=1:100
     data = input_data(x:x+95);
     x=x+96;
+    % Encoded Data
     encoded_data = encode(data, symbol_size, trellis);
-    cext_data = transmitter(encoded_data, num_symbols, prefix, fft_size);
+    % Cyclically Prefixed modulated data, ready for transmission
+    modulated_data = transmitter(encoded_data, qam_size, prefix, fft_size);
 
     o=1;
     % Signal-to-Noise Ratio
     for snr=0:2:50
        %% Channel Model
-        ofdm_sig=awgn(cext_data,snr,'measured'); % Adding white Gaussian Noise
+        ofdm_sig=awgn(modulated_data,snr,'measured'); % Adding white Gaussian Noise
        % figure;
        % index=1:80;
        % plot(index,cext_data,'b',index,ofdm_sig,'r'); %plot both signals
        % legend('Original Signal to be Transmitted','Signal with AWGN');
 
-        dem_data = receiver(ofdm_sig, num_symbols, prefix, fft_size);
-        rxed_data=decode(dem_data, trellis);
+        % Received data from channel, demodulated
+        demodulated_data = receiver(ofdm_sig, qam_size, prefix, fft_size);
+        % Decoded Data
+        rxed_data=decode(demodulated_data, trellis);
 
         %% Calculating BER
         rxed_data=rxed_data(:)';

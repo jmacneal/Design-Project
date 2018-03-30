@@ -1,4 +1,4 @@
-function [cext_data] = transmitter(encoded_data, num_symbols, prefix, ifft_size)
+function [cext_data] = transmitter_sefdm(encoded_data, num_symbols, prefix, ifft_size, alpha)
     %transmitter : Perform the transmitter side logic for decimal symbols ->
     %data to be put into channel.
 
