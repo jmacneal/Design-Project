@@ -26,9 +26,8 @@ symbol_size = log2(qam_size); % bits per symbol
 packet_size = 24; %packet size, in symbols
 num_bits = num_packets*packet_size*symbol_size;
 prefix = 16; %number of symbols in cyclic prefix
-fft_size = 64; %N-point fft/ifft
+fft_size = 48; %N-point fft/ifft
 input_data=randi(2, num_bits,1)' - 1;
-
 %%
 % Convolutionally encoding data 
 constlen=7;
