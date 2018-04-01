@@ -13,8 +13,8 @@
 % No. of Pilots: 4
 % Cylic Extension: 25%(16)
 
-close all
-clear all
+%close all
+%clear all
 clc
 
 
@@ -23,24 +23,28 @@ clc
 num_packets = 100; % Number of packets to transmit
 qam_size = 16; % qam symbol size (i.e., 16-QAM)
 symbol_size = log2(qam_size); % bits per symbol
-packet_size = 24; %packet size, in symbols
+packet_size = 64; %packet size, in symbols
+packet_bits = packet_size * symbol_size;
 num_bits = num_packets*packet_size*symbol_size;
 prefix = 16; %number of symbols in cyclic prefix
-fft_size = 48; %N-point fft/ifft
+fft_size = 140; %N-point fft/ifft
 input_data=randi(2, num_bits,1)' - 1;
 %%
 % Convolutionally encoding data 
 constlen=7;
 codegen = [171 133];    % Polynomial
 trellis = poly2trellis(constlen, codegen);
+
+encoding_ratio = trellis.numOutputSymbols/trellis.numInputSymbols;
+alpha = packet_size*encoding_ratio/fft_size;
+
+
 x=1;
 si=1; %for BER rows
 %%
-
-
-for d=1:100
-    data = input_data(x:x+95);
-    x=x+96;
+for d=0:num_packets-1
+    data = input_data(x:x+packet_bits-1);
+    x=x+packet_bits;
     % Encoded Data
     encoded_data = encode(data, symbol_size, trellis);
     % Cyclically Prefixed modulated data, ready for transmission
@@ -48,7 +52,7 @@ for d=1:100
 
     o=1;
     % Signal-to-Noise Ratio
-    for snr=0:2:50
+    for snr=0:1:50
        %% Channel Model
         ofdm_sig=awgn(modulated_data,snr,'measured'); % Adding white Gaussian Noise
        % figure;
@@ -57,7 +61,7 @@ for d=1:100
        % legend('Original Signal to be Transmitted','Signal with AWGN');
 
         % Received data from channel, demodulated
-        demodulated_data = receiver(ofdm_sig, qam_size, prefix, fft_size);
+        demodulated_data = receiver(ofdm_sig, qam_size, prefix, fft_size, alpha);
         % Decoded Data
         rxed_data=decode(demodulated_data, trellis);
 
