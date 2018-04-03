@@ -27,7 +27,7 @@ packet_size = 128; %packet size, in symbols
 packet_bits = packet_size * symbol_size;
 num_bits = num_packets*packet_size*symbol_size;
 prefix = 16; %number of symbols in cyclic prefix
-fft_size = 260; %N-point fft/ifft
+fft_size = 256; %N-point fft/ifft
 rand_stream = RandStream('mt19937ar', 'Seed', 0); %Reproducable random stream
 input_data=randi(rand_stream, [0 1], num_bits,1)'; 
 guard_interval_ratio = 16; % Insert a guard interval every 16 symbols
@@ -41,11 +41,12 @@ encoding_ratio = trellis.numOutputSymbols/trellis.numInputSymbols;
 alpha = packet_size*encoding_ratio/fft_size;
 
 
-snr_range = 0:1:48; % Calculate SNR from 0->48 dB, in steps of 1dB
+snr_range = 0:1:49; % Calculate SNR from 0->48 dB, in steps of 1dB
 x=1; % iterate over input_data bits
-si=1; %for BER rows
+BER = zeros(num_packets, size(snr_range,2));
+
 %%
-for d=0:num_packets-1
+for d=1:num_packets
     data = input_data(x:x+packet_bits-1);
     x=x+packet_bits;
     % Encoded Data
@@ -53,12 +54,13 @@ for d=0:num_packets-1
     % Cyclically Prefixed modulated data, ready for transmission
     modulated_data = transmitter(encoded_data, qam_size, prefix, fft_size);
 
-    o=1;
+    snr_index = 1;
     % Signal-to-Noise Ratio
     for snr=snr_range
        %% Channel Model
         ofdm_sig=awgn(modulated_data,snr,'measured', 'db'); % Adding white Gaussian Noise
-       % figure;
+       % figure;    BER = zeros(size(snr_range,2), )
+
        % index=1:80;
        % plot(index,cext_data,'b',index,ofdm_sig,'r'); %plot both signals
        % legend('Original Signal to be Transmitted','Signal with AWGN');
@@ -69,14 +71,11 @@ for d=0:num_packets-1
         rxed_data=decode(demodulated_data, symbol_size, trellis);
 
         %% Calculating BER
-        error_cnt=0;
-        c=xor(data,rxed_data);
-        error_cnt=nnz(c);
+        error_cnt=nnz(xor(data,rxed_data));
 
-        BER(si,o)=error_cnt/length(data);
-        o=o+1;
+        BER(d,snr_index)=error_cnt/length(data);
+        snr_index = snr_index + 1;
      end % SNR loop ends here
-     si=si+1;
 end % main data loop
 
 
