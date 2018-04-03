@@ -1,6 +1,6 @@
 % Dencode decimal data using viterbi algorithm
 % Returns 
-function decoded_data = decode(dec_data, trellis);
+function decoded_data = decode(dec_data, symbol_size, trellis);
     %% 
     % Decimal to binary conversion
     bin=de2bi(dec_data','left-msb');
@@ -9,7 +9,7 @@ function decoded_data = decode(dec_data, trellis);
 
     %%
     % De-Interleaving
-    deintlvddata = matdeintrlv(bin,2,2); % De-Interleave
+    deintlvddata = matdeintrlv(bin,2,symbol_size/2); % De-Interleave
     deintlvddata=deintlvddata';
     deintlvddata=deintlvddata(:)';
 

@@ -17,5 +17,5 @@ function [demodulated_data] = receiver(signal, num_symbols, prefix, fft_size, al
     ff_sig = ff_sig(1:alpha*fft_size);
     %%
     % Demodulation
-    demodulated_data= qamdemod(ff_sig, num_symbols);
+    demodulated_data= qamdemod(ff_sig, num_symbols, 'UnitAveragePower', false);
 end

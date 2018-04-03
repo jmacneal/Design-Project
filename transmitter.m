@@ -1,9 +1,9 @@
 %transmitter : Perform the transmitter side logic for decimal symbols ->
 %data to be put into channel.
 function [cext_data] = transmitter(encoded_data, num_symbols, prefix, ifft_size)
-    %% 16-QAM Modulation
-    y = qammod(encoded_data,num_symbols);
-
+    %% N-QAM Modulation
+    y = qammod(encoded_data,num_symbols, 'UnitAveragePower', false);
+    
     %% IFFT
     ifft_sig=ifft(y,ifft_size);
     ifft_sig = ifft_sig(1:size(y));
