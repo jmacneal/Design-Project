@@ -1,6 +1,6 @@
 % Dencode decimal data using viterbi algorithm
 % Returns 
-function decoded_data = decode(dec_data, symbol_size, trellis);
+function decoded_data = decode(dec_data, symbol_size, trellis)
     %% 
     % Decimal to binary conversion
     bin=de2bi(dec_data','left-msb');

@@ -1,11 +1,10 @@
 % Encode binary data using convolutional encoder
 % Returns matrix, each row is a subcarrier input array of symbols (to
 % modulation)
-function encoded_data = encode(binary_data, symbol_size, trellis)
+function encoded_data = encode(binary_data, symbol_size, trellis)    
     %%
     % Convolutionally encoding data 
     codedata = convenc(binary_data, trellis);
-
     %%
     %Interleaving coded data
 
