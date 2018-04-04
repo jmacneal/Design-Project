@@ -15,6 +15,10 @@ rx_in  = 0;
 Fc     = 1e4; % Carrier Wave (Baseband) Frequency
 Fs     = 1e6; % Sampling Frequency
 sym_duration = 5; %Hold each symbol for 100/Fs seconds
+%ber = zeros(51, 1,25);
+%alphas = [];
+%for fft_len = 130:1:147
+
 %%
 % Generating and coding data
 num_packets = 20; % Number of packets to transmit
@@ -37,7 +41,7 @@ encoding_ratio = trellis.numOutputSymbols/trellis.numInputSymbols;
 
 fft_size = encoding_ratio*num_subs; %N-point fft/ifft
 alpha = num_subs*encoding_ratio/fft_size;
-
+%alphas(fft_len - 128) = alpha;
 
 snr_range = 0:1:49; % Calculate SNR from 0->49 dB, in steps of 1dB
 x=1; % iterate over input_data bits
@@ -58,8 +62,14 @@ for d=1:num_packets
        %% Channel Model
         ofdm_sig=awgn(modulated_data,snr,'measured', 'db'); % Adding white Gaussian Noise
 
+        %r = zeros(128, 10);
+        %for i = 1:10
+
         %% Received data from channel, demodulated
         demodulated_data = ofdm_demod(ofdm_sig, qam_size, prefix, fft_size, alpha);
+%         r(:,i) = demodulated_data;
+
+        %end
         %% Decoded Data
         rxed_data=decode(demodulated_data, symbol_size, trellis);
 
@@ -83,11 +93,29 @@ for col=1:num_cols        %%%change if SNR loop Changed
     end
 end
 ber=ber./num_packets; 
+% for col=1:25        %%%change if SNR loop Changed
+%     for row=1:100
+%         ber(fft_len - 128, col)=ber(fft_len - 128, col)+BER(fft_len - 128, row,col);
+%     end
+% end
+% 
+% end
 
 %%
+BER;
 figure
 semilogy(snr_range,ber);
 title('BER vs SNR');
 ylabel('BER');
+% p = [];
+% for ite = 1:16
+% i=0:2:48;
+%     p(ite) = semilogy(i,ber(ite, :));
+%     hold on;
+% end
+% hold off;
+% title('Bit Error Rate vs. Signal to Noise Ratio for OFDM Data Transmission');
+% ylabel('Bit Error Rate (%)');
 xlabel('SNR (dB)');
+
 grid on

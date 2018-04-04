@@ -3,7 +3,7 @@
 function [demodulated_data] = receiver(signal, num_symbols, prefix, fft_size, alpha)
     %Removing Cyclic Extension
     signal_size = size(signal,1);
-    rxed_sig = zeros(signal_size, 1);
+    rxed_sig = zeros(signal_size, 1);  % Padded with zeros.
     for i=1:signal_size-prefix
         rxed_sig(i)=signal(i+prefix);
     end
@@ -11,7 +11,7 @@ function [demodulated_data] = receiver(signal, num_symbols, prefix, fft_size, al
     %%
     % FFT
 
-    ff_sig=fft(rxed_sig,fft_size);
+    ff_sig= (1 ./ sqrt(alpha)) * fft(rxed_sig,fft_size);
 
     % Remove alpha (null) subcarriers 
     ff_sig = ff_sig(1:alpha*fft_size);
