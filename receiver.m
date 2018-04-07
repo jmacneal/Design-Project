@@ -11,10 +11,13 @@ function [demodulated_data] = receiver(signal, num_symbols, prefix, fft_size, al
     %%
     % FFT
 
-    ff_sig= (1 ./ sqrt(alpha)) * fft(rxed_sig,fft_size);
+    ff_sig= fft(rxed_sig,fft_size);
 
     % Remove alpha (null) subcarriers 
     ff_sig = ff_sig(1:alpha*fft_size);
+    
+    %% Perform "detection", i.e. correct the result in QAM space.                                
+    
     %%
     % Demodulation
     demodulated_data= qamdemod(ff_sig, num_symbols, 'UnitAveragePower', false);

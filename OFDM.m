@@ -15,16 +15,19 @@ rx_in  = 0;
 Fc     = 1e4; % Carrier Wave (Baseband) Frequency
 Fs     = 1e6; % Sampling Frequency
 sym_duration = 5; %Hold each symbol for 100/Fs seconds
-%ber = zeros(51, 1,25);
-%alphas = [];
-%for fft_len = 130:1:147
+
+ber_ = zeros(200, 1,50);
+alphas = [];
+range_of_exts = 1:3:28;
+meow_counter = 0;
+for fft_ext = range_of_exts
 
 %%
 % Generating and coding data
 num_packets = 20; % Number of packets to transmit
 qam_size = 256; % qam symbol size (i.e., 16-QAM)
 symbol_size = log2(qam_size); % bits per symbol
-num_subs = 512; %packet size, in symbols
+num_subs = 128; %packet size, in symbols
 packet_bits = num_subs * symbol_size;
 num_bits = num_packets*num_subs*symbol_size;
 prefix = 0.25*num_subs; %number of symbols in cyclic prefix
@@ -39,16 +42,31 @@ trellis = poly2trellis(constlen, codegen);
 
 encoding_ratio = trellis.numOutputSymbols/trellis.numInputSymbols;
 
-fft_size = encoding_ratio*num_subs; %N-point fft/ifft
+fft_size = encoding_ratio*num_subs + fft_ext; %N-point fft/ifft
 alpha = num_subs*encoding_ratio/fft_size;
-%alphas(fft_len - 128) = alpha;
+alphas(fft_ext) = alpha;
 
 snr_range = 0:1:49; % Calculate SNR from 0->49 dB, in steps of 1dB
 x=1; % iterate over input_data bits
 BER = zeros(num_packets, size(snr_range,2));
 
 
+% Generate the channel matrix H.
+ift = ifft(1, fft_size)';
+H_first_row = fft(ift(1:fft_size-fft_ext+1), fft_size);
+H_fr = H_first_row ./ H_first_row(1);
+row_size = size(H_fr);
+H = zeros(row_size(1), row_size(1));
+
+for i = 1:row_size
+    H(:, i) = circshift(H_fr, i-1);
+end
+
+H = abs(H);
+
 for d=1:num_packets
+    meow_counter = meow_counter+1;
+    meow_counter / (num_packets * length(range_of_exts))
     data = input_data(x:x+packet_bits-1);
     x=x+packet_bits;
     %% Encoded Data
@@ -66,7 +84,7 @@ for d=1:num_packets
         %for i = 1:10
 
         %% Received data from channel, demodulated
-        demodulated_data = ofdm_demod(ofdm_sig, qam_size, prefix, fft_size, alpha);
+        demodulated_data = ofdm_demod(ofdm_sig, qam_size, prefix, fft_size, alpha, H);
 %         r(:,i) = demodulated_data;
 
         %end
@@ -92,20 +110,28 @@ for col=1:num_cols        %%%change if SNR loop Changed
         ber(col)=ber(col)+BER(row,col);
     end
 end
-ber=ber./num_packets; 
+ber=ber./num_packets;
+
+ber_(fft_ext, :, :) = ber;
+
 % for col=1:25        %%%change if SNR loop Changed
 %     for row=1:100
 %         ber(fft_len - 128, col)=ber(fft_len - 128, col)+BER(fft_len - 128, row,col);
 %     end
 % end
 % 
-% end
-
+end
+alphas(range_of_exts)
 %%
 BER;
 figure
-semilogy(snr_range,ber);
-title('BER vs SNR');
+for i = 1:3:41
+    p = semilogy(snr_range,ber_(i, :));
+    p.LineWidth=1.5;
+    hold on;
+end
+hold off;
+title('SEFDM Bit Error Curve Without Zero Forcing');
 ylabel('BER');
 % p = [];
 % for ite = 1:16
